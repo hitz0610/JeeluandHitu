@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeelu and Hitu's First Valentine's</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-style: italic;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://media.istockphoto.com/id/1209007611/vector/bright-maroon-deep-red-colored-blotched-and-marble-effect-grunge-wall-texture-backgrounds.jpg?s=612x612&w=0&k=20&c=XmBH8Al_qEzcbgXv8TRVfWab9Lsx-hJJ-Lzg96XUw8o=') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Container for each page content */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            display: none;
+            background: rgba(0, 0, 0, 0.5);  /* Semi-transparent background */
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Header Styling */
+        header h1 {
+            font-size: 3em;
+            color: #ffccd5;
+            font-weight: bold;
+        }
+
+        /* Love message text */
+        .love-message p {
+            font-size: 1.5em;
+            color: #fff;
+            margin: 20px 0;
+            line-height: 1.6;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        /* Button Styling */
+        .button {
+            padding: 15px 30px;
+            background-color: #ff4d6d;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff1a3d;
+        }
+
+    </style>
+</head>
+<body>
+
+ <audio id="player" autoplay loop>
+     <source src="kudmayi.mp3" type="audio/mp3">
+ </audio>
+
+    <!-- Page Sections (Page 1 to Final) -->
+    <div id="page1" class="container home">
+        <header>
+            <h1>💕Happy Valentine's Day!💕</h1>
+            <button class="button" onclick="showNextPage('page2')">Next</button>
+        </header>   
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2" class="container page1">
+        <header>
+            <h1>✨💕Happy Valentine's Day, Jeelu!💕✨</h1>
+        </header>
+        <section class="love-message">
+            <p>Hey Jeelu, Happy Valentine’s Day! Even though we’re miles apart today, I feel like you’re right here with me. I wanted to remind you just how much you mean to me. You’re my sunshine, my constant source of happiness. I feel so lucky to have you in my life, and I can’t wait for the day we’ll celebrate all the special moments together in person. Tame mara mate bauj important bani gaya chho!!!</p>
+            <button class="button" onclick="showNextPage('page3')">Next</button>
+        </section>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3" class="container page2">
+        <header>
+            <h1>✨💕Our Journey Together💕✨</h1>
+        </header>
+        <section class="love-message">
+            <p>I can’t believe how far we’ve come together already, Jeelu. Even though we’ve never met in person, I feel like we’ve shared so much of our hearts and lives. Every call, every message, every little thing we do makes our bond even stronger. It’s incredible to think about how much we’ve grown, how much we’ve learned about each other. I can’t wait to see where our journey takes us, because I know there’s so much more waiting for us.</p>
+            <button class="button" onclick="showNextPage('page4')">Next</button>
+        </section>
+    </div>
+
+    <!-- Page 4 -->
+    <div id="page4" class="container page3">
+        <header>
+            <h1>✨💕Memories Together💕✨</h1>
+        </header>
+        <section class="love-message">
+            <p>It feels like time flies when I’m talking to you, Jeelu, and in just one month, we’ve already made so many beautiful memories. From our late-night conversations to the silly moments that always make me laugh, every second has been precious. I smile when I think about our little inside jokes and how you make me feel so understood, even from afar. We’ve shared so much, and I can’t wait to create even more amazing moments with you, my heart.</p>
+            <button class="button" onclick="showNextPage('page5')">Next</button>
+        </section>
+    </div>
+
+    <!-- Page 5 -->
+    <div id="page5" class="container page4">
+        <header>
+            <h1>✨💕Looking Forward💕✨</h1>
+        </header>
+        <section class="love-message">
+            <p>Thinking about our future fills me with so much excitement, Jeelu. I know this distance isn’t forever, and the day we finally meet in person will be the start of a whole new chapter. Until then, I’ll cherish every single message and every memory we make together. Our love is growing stronger each day, and I’m more sure than ever that we’re building something beautiful that will last forever.</p>
+            <button class="button" onclick="showNextPage('page6')">Next</button>
+        </section>
+    </div>
+
+    <!-- Page 6 -->
+    <div id="page6" class="container page5">
+        <header>
+            <h1>✨💕Surprise Message💕✨</h1>
+        </header>
+        <section class="love-message">
+            <p>I’ve been thinking about you nonstop, Jeelu, and I just wanted to send you a little surprise to let you know how much you adore me. You are truly the best thing that’s ever happened to me, and I feel incredibly blessed to have you by my side. Even though we’re apart right now, it feels like our souls are always connected. I can’t wait for the day when I can hold you close and tell you all of this in person. You’re my forever.</p>
+            <button class="button" onclick="showNextPage('final')">Next</button>
+        </section>
+    </div>
+
+    <!-- Final Page -->
+    <div id="final" class="container page6">
+        <header>
+            <h1>✨💕Final Message💕✨</h1>
+        </header>
+        <section class="love-message">
+            <p>I know we’re just starting this adventure, Jeelu, but I already see forever with you. You’ve shown me what true love feels like, and I can’t imagine my life without you in it. This is just the beginning, my love. There are so many more memories to make, so many more dreams to share. I’m looking forward to spending the rest of my life with you, and no matter how far apart we are now, nothing will ever change how I feel about you. You are my heart, my everything. With all my heart,(yours and only yours) Hitu!!!🥰</p>
+        </section>
+    </div>
+
+    <script>
+        function showNextPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.container');
+            pages.forEach(page => page.style.display = 'none');
+
+            // Show the selected page
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        // Initially show the first page
+        showNextPage('page1');
+    </script>
+
+</body>
+</html>
